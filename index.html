@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RA2111003020297</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>REST API UI</h1>
+    <form id="postForm">
+        <h2>POST Request</h2>
+        <label for="dataInput">Data (comma-separated):</label>
+        <input type="text" id="dataInput" required>
+        <button type="submit">Send POST Request</button>
+    </form>
+    <div id="postResponse"></div>
+    <button id="getRequestButton">Send GET Request</button>
+    <div id="getResponse"></div>
+    <h2>Response Sections</h2>
+    <select id="responseDropdown">
+        <option value="characters">Characters</option>
+        <option value="numbers">Numbers</option>
+        <option value="highestAlphabet">Highest Alphabet</option>
+    </select>
+    <div id="responseDetails">
+        <label>
+            <input type="checkbox" id="showCharacters" checked> Characters
+        </label>
+        <label>
+            <input type="checkbox" id="showNumbers" checked> Numbers
+        </label>
+        <label>
+            <input type="checkbox" id="showHighestAlphabet" checked> Highest Alphabet
+        </label>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
